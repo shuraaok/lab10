@@ -1,0 +1,8 @@
+D:/Qt/laba10/build/Desktop-Debug/CMakeFiles/laba10.dir
+D:/Qt/laba10/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+D:/Qt/laba10/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+D:/Qt/laba10/build/Desktop-Debug/CMakeFiles/list_install_components.dir
+D:/Qt/laba10/build/Desktop-Debug/CMakeFiles/install.dir
+D:/Qt/laba10/build/Desktop-Debug/CMakeFiles/install/local.dir
+D:/Qt/laba10/build/Desktop-Debug/CMakeFiles/laba10_autogen_timestamp_deps.dir
+D:/Qt/laba10/build/Desktop-Debug/CMakeFiles/laba10_autogen.dir

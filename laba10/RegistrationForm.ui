@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RegistrationForm</class>
+ <widget class="QWidget" name="RegistrationForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Регистрация пользователя</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+    QWidget {
+        background-color: #1a202c;
+        color: #e2e8f0;
+        font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    QLineEdit {
+        background-color: #2d3748;
+        border: 2px solid #4a5568;
+        border-radius: 5px;
+        padding: 8px;
+        color: #e2e8f0;
+        font-size: 12px;
+    }
+    QLineEdit:focus {
+        border-color: #4299e1;
+    }
+    QPushButton {
+        background-color: #4299e1;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+    }
+    QPushButton:hover {
+        background-color: #3182ce;
+    }
+    QPushButton:pressed {
+        background-color: #2b6cb0;
+    }
+    QGroupBox {
+        border: 2px solid #4a5568;
+        border-radius: 5px;
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    QGroupBox::title {
+        subcontrol-origin: margin;
+        left: 10px;
+        padding: 0 5px 0 5px;
+    }
+    QLabel {
+        color: #e2e8f0;
+    }
+    QCheckBox {
+        color: #e2e8f0;
+    }
+    QCheckBox::indicator {
+        width: 13px;
+        height: 13px;
+    }
+   </string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="photoLayout">
+     <item>
+      <widget class="QLabel" name="photoLabel">
+       <property name="fixedSize">
+        <size>
+         <width>150</width>
+         <height>150</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border: 2px solid #4a5568; border-radius: 10px; background-color: #2d3748;</string>
+       </property>
+       <property name="text">
+        <string>Фото
+        </string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="photoBtnLayout">
+     <item>
+      <widget class="QPushButton" name="loadPhotoBtn">
+       <property name="text">
+        <string>Загрузить фото</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>10</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="serversGroup">
+     <property name="title">
+      <string>Сервера:</string>
+     </property>
+     <layout class="QHBoxLayout" name="serversLayout">
+      <item>
+       <widget class="QCheckBox" name="europeCheck">
+        <property name="text">
+         <string>Европа</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="asiaCheck">
+        <property name="text">
+         <string>Азия</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="americaCheck">
+        <property name="text">
+         <string>Америка</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>10</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="fieldsLayout">
+     <item row="0" column="0">
+      <widget class="QLabel" name="firstNameLabel">
+       <property name="text">
+        <string>Имя:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="firstNameEdit"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="lastNameLabel">
+       <property name="text">
+        <string>Фамилия:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="lastNameEdit"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="nicknameLabel">
+       <property name="text">
+        <string>Никнейм:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="nicknameEdit"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="idKeyLabel">
+       <property name="text">
+        <string>ID-Key:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QLineEdit" name="idKeyEdit"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="emailLabel">
+       <property name="text">
+        <string>Почта:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="emailEdit"/>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="passwordLabel">
+       <property name="text">
+        <string>Пароль:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="passwordEdit">
+       <property name="echoMode">
+        <enum>QLineEdit::Password</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <spacer name="verticalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="registerBtnLayout">
+     <item>
+      <widget class="QPushButton" name="registerBtn">
+       <property name="text">
+        <string>Регистрация</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
